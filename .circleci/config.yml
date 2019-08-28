@@ -1,0 +1,38 @@
+# iOS CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/ios-migrating-from-1-2/ for more details
+#
+version: 2
+jobs:
+  build:
+
+    # Specify the Xcode version to use
+    macos:
+      xcode: "10.2.1"
+
+    steps:
+      - checkout
+
+      # Install CocoaPods
+      - run:
+          name: Install CocoaPods
+          command: pod install
+
+      # Build the app and run tests
+      - run:
+          name: Build and run tests
+          command: fastlane scan
+          environment:
+            SCAN_DEVICE: iPhone 8
+            SCAN_SCHEME: SunLight
+
+       - store_test_results:
+          path: output/scan
+      - store_artifacts:
+          path: output
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build-and-test
