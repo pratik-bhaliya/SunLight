@@ -22,6 +22,7 @@ class SunLightTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+       XCTAssert(passwordCheck(password: "12sfs"), "Your password is not enough")
     }
 
     func testPerformanceExample() {
@@ -29,6 +30,14 @@ class SunLightTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func passwordCheck(password: String) -> Bool {
+        return password.count > 3
+    }
+    
+    func usernameCheck(userName: String) -> Bool {
+        return true
     }
 
 }
