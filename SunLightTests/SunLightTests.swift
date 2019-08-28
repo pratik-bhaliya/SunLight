@@ -23,6 +23,9 @@ class SunLightTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
        XCTAssert(passwordCheck(password: "12sfs"), "Your password is not enough")
+        
+        let i = 0
+        XCTAssert(i == 1, "Unable to pass this test")
     }
 
     func testPerformanceExample() {
