@@ -1,0 +1,6 @@
+framework module Pods_SunLightTests {
+  umbrella header "Pods-SunLightTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
