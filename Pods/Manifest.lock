@@ -8,12 +8,10 @@ PODS:
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
   - Result (4.1.0)
-  - SwiftLint (0.30.1)
 
 DEPENDENCIES:
   - AlamofireImage
   - Moya
-  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -21,15 +19,13 @@ SPEC REPOS:
     - AlamofireImage
     - Moya
     - Result
-    - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
 
-PODFILE CHECKSUM: 0a96059f1cd40393d4c418774d67116705f2f6ac
+PODFILE CHECKSUM: e7b53e7ac48ab9e9f2b0e7f36dc0b5257988fcc0
 
 COCOAPODS: 1.5.3
