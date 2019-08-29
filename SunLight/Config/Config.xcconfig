@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  SunLight
+//
+//  Created by Pratik Bhaliya on 29/8/19.
+//  Copyright © 2019 Pratik Bhaliya. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+let DARKSKY_API_KEY = d8b40396951045f865c3ae65c32e097a
