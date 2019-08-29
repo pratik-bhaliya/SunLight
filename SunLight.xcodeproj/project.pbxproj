@@ -37,7 +37,6 @@
 		055A7C9023172AA600EDBDF9 /* SunLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055A7C9423172AA600EDBDF9 /* SunLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunLightTests.swift; sourceTree = "<group>"; };
 		055A7C9623172AA600EDBDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		055EF56323175B6F00E90AF1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		055EF56523175C1D00E90AF1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		4272F8F70467A5D97690E9CE /* Pods-SunLightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B6EEAB264A288DC2CD84073 /* Pods-SunLightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				055EF56423175B8900E90AF1 /* Service */,
-				055EF56223175B4B00E90AF1 /* Config */,
 				055A7C7F23172AA400EDBDF9 /* AppDelegate.swift */,
 				055EF56023175B2500E90AF1 /* Storyboard */,
 				055EF56123175B4000E90AF1 /* Supporting Files */,
@@ -124,14 +122,6 @@
 				055A7C8B23172AA600EDBDF9 /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		055EF56223175B4B00E90AF1 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				055EF56323175B6F00E90AF1 /* Config.xcconfig */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		055EF56423175B8900E90AF1 /* Service */ = {
@@ -374,7 +364,6 @@
 /* Begin XCBuildConfiguration section */
 		055A7C9723172AA600EDBDF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 055EF56323175B6F00E90AF1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -436,7 +425,6 @@
 		};
 		055A7C9823172AA600EDBDF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 055EF56323175B6F00E90AF1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
