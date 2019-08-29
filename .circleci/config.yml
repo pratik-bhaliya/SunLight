@@ -1,4 +1,3 @@
-# .circleci/config.yml
 version: 2
 jobs:
 
@@ -34,7 +33,7 @@ swiftlint:
 
 workflows:
   version: 2
-  lint-build-and-test:
+  build-test-lint:
     jobs:
       - swiftlint
       - build-and-test
