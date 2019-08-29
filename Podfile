@@ -9,6 +9,7 @@ target 'SunLight' do
 inhibit_all_warnings!
 pod 'Moya'
 pod 'AlamofireImage'
+pod 'SwiftLint'
 
   target 'SunLightTests' do
     inherit! :search_paths
