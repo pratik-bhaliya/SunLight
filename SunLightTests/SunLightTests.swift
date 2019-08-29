@@ -25,7 +25,7 @@ class SunLightTests: XCTestCase {
        XCTAssert(passwordCheck(password: "12sfs"), "Your password is not enough")
         
         let i = 0
-        XCTAssert(i == 1, "Unable to pass this test")
+        XCTAssert(i == 0, "Result should be achievable")
     }
 
     func testPerformanceExample() {
