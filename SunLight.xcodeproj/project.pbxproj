@@ -13,6 +13,7 @@
 		055A7C8A23172AA600EDBDF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055A7C8823172AA600EDBDF9 /* LaunchScreen.storyboard */; };
 		055A7C9523172AA600EDBDF9 /* SunLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7C9423172AA600EDBDF9 /* SunLightTests.swift */; };
 		055EF56623175C1D00E90AF1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF56523175C1D00E90AF1 /* LocationService.swift */; };
+		055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF567231789FA00E90AF1 /* NetworkService.swift */; };
 		19B511D362AE93B119A3AAC1 /* Pods_SunLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A845369DF6A7D6F1D27D8187 /* Pods_SunLight.framework */; };
 		EA081322225E5C402011FC53 /* Pods_SunLightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4526260F823CB55F054579 /* Pods_SunLightTests.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		055A7C9423172AA600EDBDF9 /* SunLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunLightTests.swift; sourceTree = "<group>"; };
 		055A7C9623172AA600EDBDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055EF56523175C1D00E90AF1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		055EF567231789FA00E90AF1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4272F8F70467A5D97690E9CE /* Pods-SunLightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B6EEAB264A288DC2CD84073 /* Pods-SunLightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE1DEE37FE152C219254E97 /* Pods-SunLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLight.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunLight/Pods-SunLight.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				055EF56523175C1D00E90AF1 /* LocationService.swift */,
+				055EF567231789FA00E90AF1 /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				055EF56623175C1D00E90AF1 /* LocationService.swift in Sources */,
+				055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */,
 				055A7C8023172AA400EDBDF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
