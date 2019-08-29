@@ -36,5 +36,5 @@ workflows:
   version: 2
   lint-build-and-test:
     jobs:
-      - build-and-test
       - swiftlint
+      - build-and-test
