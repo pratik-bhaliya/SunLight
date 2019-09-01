@@ -9,7 +9,6 @@
 import Foundation
 import Moya
 
-let api = "d8b40396951045f865c3ae65c32e097a"
 
 enum NetworkService {
     case forecast(Double,Double,String)
