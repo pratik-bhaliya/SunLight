@@ -6,7 +6,7 @@
 //  Copyright © 2019 Pratik Bhaliya. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Forecast: Codable {
     let daily: Daily
@@ -24,15 +24,34 @@ struct Datum: Codable {
 }
 
 struct ForecastViewmodel {
-    let icon,summary: String
-    let tempHigh,tempLow: Double
+    let dayOfWeek,summary: String
+    let weatherImage: UIImage?
+    let tempHigh,tempLow: Int
+    
+    
+    static func dateFormatter(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE"
+        return formatter.string(from: date)
+    }
+    
+    static func convertFahrenheit(high: Int) ->Int {
+        let highCelsius = (high - 32) * 5/9
+        return highCelsius
+    }
+    
+    static func convertLowFahrenheit(low: Int) -> Int {
+        return (low - 32) * 5/9
+    }
 }
 
 extension ForecastViewmodel{
     init(with dailyData: Datum) {
-        self.icon = dailyData.icon
+        let date = Date(timeIntervalSince1970: TimeInterval(dailyData.time))
+        self.weatherImage = UIImage(named:dailyData.icon)
+        self.dayOfWeek = ForecastViewmodel.dateFormatter(date)
         self.summary = dailyData.summary
-        self.tempLow = dailyData.temperatureLow
-        self.tempHigh = dailyData.temperatureLow
+        self.tempLow = ForecastViewmodel.convertLowFahrenheit(low: Int(dailyData.temperatureLow))
+        self.tempHigh = ForecastViewmodel.convertFahrenheit(high: Int(dailyData.temperatureLow))
     }
 }

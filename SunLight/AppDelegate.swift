@@ -44,13 +44,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         networkProvider.request(.forecast(location.coordinate.latitude, location.coordinate.longitude, api)) { (result) in
             switch result {
             case .success(let response):
-                let json = try? JSONDecoder().decode(Forecast.self, from: response.data)
-                let viewmodle = json?.daily.data.compactMap(ForecastViewmodel.init)
-                print(viewmodle)
+                do {
+                    let json = try JSONDecoder().decode(Forecast.self, from: response.data)
+                    let viewmodle = json.daily.data.compactMap(ForecastViewmodel.init)
+                    let forecastViewController = AppDelegate.viewControllerInNav(of: WeatherTableViewController.self, in: self.window)
+                    forecastViewController?.viewModel = viewmodle
+                }catch {
+                    print("unable to parse request: \(error)")
+                }
             case .failure(let error):
                 print("Unabkle to parse your requeste \(error)")
             }
         }
+    }
+    
+    static func viewControllerInNav<T>(of Type: T.Type, in window: UIWindow?) -> T? {
+        return window?.rootViewController.flatMap { $0 as? UINavigationController }? .viewControllers.first(where: {$0 is T}) as? T
     }
 }
 

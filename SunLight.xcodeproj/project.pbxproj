@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0511FD53231C6C12006DE768 /* DailyWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0511FD52231C6C12006DE768 /* DailyWeatherTableViewCell.swift */; };
 		055A7C8023172AA400EDBDF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7C7F23172AA400EDBDF9 /* AppDelegate.swift */; };
 		055A7C8523172AA400EDBDF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055A7C8323172AA400EDBDF9 /* Main.storyboard */; };
 		055A7C8723172AA600EDBDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055A7C8623172AA600EDBDF9 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0511FD52231C6C12006DE768 /* DailyWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		055A7C7C23172AA400EDBDF9 /* SunLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055A7C7F23172AA400EDBDF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		055A7C8423172AA400EDBDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0511FD51231C6BEB006DE768 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0511FD52231C6C12006DE768 /* DailyWeatherTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		055A7C7323172AA400EDBDF9 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		055A7C7E23172AA400EDBDF9 /* SunLight */ = {
 			isa = PBXGroup;
 			children = (
+				0511FD51231C6BEB006DE768 /* Cell */,
 				05DD4C3C231B2B8200B78378 /* Model */,
 				057C36162318721C00B47CCE /* ViewController */,
 				055EF56423175B8900E90AF1 /* Service */,
@@ -346,6 +357,7 @@
 			files = (
 				05DD4C3B2319C02600B78378 /* WeatherTableViewController.swift in Sources */,
 				055EF56623175C1D00E90AF1 /* LocationService.swift in Sources */,
+				0511FD53231C6C12006DE768 /* DailyWeatherTableViewCell.swift in Sources */,
 				055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */,
 				05DD4C3E231B2B9300B78378 /* ForecastModel.swift in Sources */,
 				055A7C8023172AA400EDBDF9 /* AppDelegate.swift in Sources */,
