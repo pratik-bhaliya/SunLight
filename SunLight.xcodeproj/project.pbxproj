@@ -15,8 +15,11 @@
 		055A7C9523172AA600EDBDF9 /* SunLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055A7C9423172AA600EDBDF9 /* SunLightTests.swift */; };
 		055EF56623175C1D00E90AF1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF56523175C1D00E90AF1 /* LocationService.swift */; };
 		055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF567231789FA00E90AF1 /* NetworkService.swift */; };
+		0562BAC8231F1A1A003108BB /* WeatherBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562BAC7231F1A1A003108BB /* WeatherBaseView.swift */; };
+		0562BACA231F1A6F003108BB /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562BAC9231F1A6F003108BB /* WeatherDetailView.swift */; };
 		05DD4C3B2319C02600B78378 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD4C3A2319C02600B78378 /* WeatherTableViewController.swift */; };
 		05DD4C3E231B2B9300B78378 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD4C3D231B2B9300B78378 /* ForecastModel.swift */; };
+		05FBFA67231DF3F500D58709 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA66231DF3F500D58709 /* WeatherDetailViewController.swift */; };
 		19B511D362AE93B119A3AAC1 /* Pods_SunLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A845369DF6A7D6F1D27D8187 /* Pods_SunLight.framework */; };
 		EA081322225E5C402011FC53 /* Pods_SunLightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4526260F823CB55F054579 /* Pods_SunLightTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,8 +47,11 @@
 		055A7C9623172AA600EDBDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055EF56523175C1D00E90AF1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		055EF567231789FA00E90AF1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0562BAC7231F1A1A003108BB /* WeatherBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBaseView.swift; sourceTree = "<group>"; };
+		0562BAC9231F1A6F003108BB /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 		05DD4C3A2319C02600B78378 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		05DD4C3D231B2B9300B78378 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
+		05FBFA66231DF3F500D58709 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		4272F8F70467A5D97690E9CE /* Pods-SunLightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B6EEAB264A288DC2CD84073 /* Pods-SunLightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE1DEE37FE152C219254E97 /* Pods-SunLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLight.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunLight/Pods-SunLight.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 		055A7C7E23172AA400EDBDF9 /* SunLight */ = {
 			isa = PBXGroup;
 			children = (
+				0562BAC6231F19F8003108BB /* Views */,
 				0511FD51231C6BEB006DE768 /* Cell */,
 				05DD4C3C231B2B8200B78378 /* Model */,
 				057C36162318721C00B47CCE /* ViewController */,
@@ -152,10 +159,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		0562BAC6231F19F8003108BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0562BAC7231F1A1A003108BB /* WeatherBaseView.swift */,
+				0562BAC9231F1A6F003108BB /* WeatherDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		057C36162318721C00B47CCE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				05DD4C3A2319C02600B78378 /* WeatherTableViewController.swift */,
+				05FBFA66231DF3F500D58709 /* WeatherDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -358,8 +375,11 @@
 				05DD4C3B2319C02600B78378 /* WeatherTableViewController.swift in Sources */,
 				055EF56623175C1D00E90AF1 /* LocationService.swift in Sources */,
 				0511FD53231C6C12006DE768 /* DailyWeatherTableViewCell.swift in Sources */,
+				05FBFA67231DF3F500D58709 /* WeatherDetailViewController.swift in Sources */,
 				055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */,
 				05DD4C3E231B2B9300B78378 /* ForecastModel.swift in Sources */,
+				0562BACA231F1A6F003108BB /* WeatherDetailView.swift in Sources */,
+				0562BAC8231F1A1A003108BB /* WeatherBaseView.swift in Sources */,
 				055A7C8023172AA400EDBDF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
