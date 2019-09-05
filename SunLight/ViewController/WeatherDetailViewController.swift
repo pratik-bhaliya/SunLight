@@ -10,10 +10,19 @@ import UIKit
 
 class WeatherDetailViewController: UIViewController {
 
+    // MARK: - Properties & Outlets
+    @IBOutlet var weatherDetailView: WeatherDetailView?
     var viewModel: ForecastViewmodel? {
         didSet {
             updateViews()
         }
+    }
+    
+    // MARK: - View Life clycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,29 +35,19 @@ class WeatherDetailViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    // MARK: - Functions
     func updateViews(){
         if let vm = viewModel {
-            print(vm)
+            DispatchQueue.main.async {
+                self.weatherDetailView?.currentWeatherImage.image = vm.weatherImage
+                self.weatherDetailView?.minAndMaxTemp.text = "\(vm.tempLow) - \(vm.tempHigh)°"
+                self.weatherDetailView?.dateAndYear.text = vm.dayWithYear
+            }
+            print(vm.dayWithYear)
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

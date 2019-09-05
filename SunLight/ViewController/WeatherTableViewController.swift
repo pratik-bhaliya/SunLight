@@ -10,18 +10,19 @@ import UIKit
 
 class WeatherTableViewController: UITableViewController {
 
+    // MARK: - Properties & Outlets
     var viewModel:[ForecastViewmodel] = [] {
         didSet{
             tableView.reloadData()
         }
     }
     
+    // MARK: - View Life-Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return viewModel.count

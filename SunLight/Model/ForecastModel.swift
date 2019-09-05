@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - Forecast Model
 struct Forecast: Codable {
     let daily: Daily
 }
@@ -27,11 +28,11 @@ struct ForecastViewmodel {
     let dayOfWeek,summary: String
     let weatherImage: UIImage?
     let tempHigh,tempLow: Int
+    let dayWithYear:String
     
-    
-    static func dateFormatter(_ date: Date) -> String {
+    static func dateFormatter(_ date: Date, and formate:String) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
+        formatter.dateFormat = formate
         return formatter.string(from: date)
     }
     
@@ -49,7 +50,8 @@ extension ForecastViewmodel{
     init(with dailyData: Datum) {
         let date = Date(timeIntervalSince1970: TimeInterval(dailyData.time))
         self.weatherImage = UIImage(named:dailyData.icon)
-        self.dayOfWeek = ForecastViewmodel.dateFormatter(date)
+        self.dayOfWeek = ForecastViewmodel.dateFormatter(date, and: "EEEE")
+        self.dayWithYear = ForecastViewmodel.dateFormatter(date, and: "EEEE, MMM d, yyyy")
         self.summary = dailyData.summary
         self.tempLow = ForecastViewmodel.convertLowFahrenheit(low: Int(dailyData.temperatureLow))
         self.tempHigh = ForecastViewmodel.convertFahrenheit(high: Int(dailyData.temperatureLow))
