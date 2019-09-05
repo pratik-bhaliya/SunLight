@@ -28,7 +28,7 @@ class DailyWeatherTableViewCell: UITableViewCell {
     func updateViews(with forecast: ForecastViewmodel){
         self.dayName.text = forecast.dayOfWeek
         self.temprature.text = "\(forecast.tempLow) - \(forecast.tempHigh) C"
-        self.weatherImage.image = forecast.weatherImage
+        self.weatherImage.image =  UIImage(named:forecast.weatherImage)
     }
 
 }

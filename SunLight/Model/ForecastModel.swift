@@ -19,14 +19,13 @@ struct Daily: Codable {
 }
 
 struct Datum: Codable {
-    let icon,summary: String
+    let icon,summary, precipType: String
     let time: Int
     let temperatureHigh,temperatureLow,humidity,windSpeed: Double
 }
 
 struct ForecastViewmodel {
-    let dayOfWeek,summary: String
-    let weatherImage: UIImage?
+    let dayOfWeek,summary,precipType,weatherImage: String
     let tempHigh,tempLow: Int
     let dayWithYear:String
     
@@ -49,11 +48,12 @@ struct ForecastViewmodel {
 extension ForecastViewmodel{
     init(with dailyData: Datum) {
         let date = Date(timeIntervalSince1970: TimeInterval(dailyData.time))
-        self.weatherImage = UIImage(named:dailyData.icon)
+        self.weatherImage = dailyData.icon
         self.dayOfWeek = ForecastViewmodel.dateFormatter(date, and: "EEEE")
         self.dayWithYear = ForecastViewmodel.dateFormatter(date, and: "EEEE, MMM d, yyyy")
         self.summary = dailyData.summary
         self.tempLow = ForecastViewmodel.convertLowFahrenheit(low: Int(dailyData.temperatureLow))
-        self.tempHigh = ForecastViewmodel.convertFahrenheit(high: Int(dailyData.temperatureLow))
+        self.tempHigh = ForecastViewmodel.convertFahrenheit(high: Int(dailyData.temperatureHigh))
+        self.precipType = dailyData.precipType
     }
 }

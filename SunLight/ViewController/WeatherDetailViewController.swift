@@ -39,9 +39,11 @@ class WeatherDetailViewController: UIViewController {
     func updateViews(){
         if let vm = viewModel {
             DispatchQueue.main.async {
-                self.weatherDetailView?.currentWeatherImage.image = vm.weatherImage
+                let imageName = vm.weatherImage+"Detail"
+                self.weatherDetailView?.currentWeatherImage.image = UIImage(named: imageName)
                 self.weatherDetailView?.minAndMaxTemp.text = "\(vm.tempLow) - \(vm.tempHigh)°"
                 self.weatherDetailView?.dateAndYear.text = vm.dayWithYear
+                self.weatherDetailView?.overallWeather.text = vm.precipType
             }
             print(vm.dayWithYear)
         }
