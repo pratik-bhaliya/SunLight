@@ -38,6 +38,16 @@
                ReferencedContainer = "container:SunLight.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "05687165233315820069F45A"
+               BuildableName = "SunLightUITests.xctest"
+               BlueprintName = "SunLightUITests"
+               ReferencedContainer = "container:SunLight.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

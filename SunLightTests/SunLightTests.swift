@@ -35,6 +35,15 @@ class SunLightTests: XCTestCase {
         }
     }
     
+    func testNetworkService() {
+        
+    }
+    
+    func testEmptyTableRowAndSectioncoutn() {
+        let table = UITableView()
+        XCTAssertEqual(table.numberOfRows(inSection: 0), 0, "This is not supportt so be")
+    }
+    
     func passwordCheck(password: String) -> Bool {
         return password.count > 3
     }

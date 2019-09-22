@@ -12,6 +12,7 @@ import Moya
 
 enum NetworkService {
     case forecast(Double,Double,String)
+    case timeMachine(String,Double,Double,String)
 }
 
 extension NetworkService: TargetType {
@@ -23,12 +24,14 @@ extension NetworkService: TargetType {
         switch self {
         case let .forecast(lat, long, api):
             return "/\(api)/\(lat),\(long)"
+        case let .timeMachine(api, lat, long, time):
+            return "/\(api)/\(lat),\(long),\(time)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .forecast:
+        case .forecast, .timeMachine:
             return .get
         }
     }
@@ -39,7 +42,7 @@ extension NetworkService: TargetType {
     
     var task: Task {
         switch self {
-        case .forecast:
+        case .forecast,.timeMachine:
             return .requestPlain
         }
     }

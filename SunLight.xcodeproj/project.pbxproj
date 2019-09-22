@@ -17,8 +17,13 @@
 		055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EF567231789FA00E90AF1 /* NetworkService.swift */; };
 		0562BAC8231F1A1A003108BB /* WeatherBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562BAC7231F1A1A003108BB /* WeatherBaseView.swift */; };
 		0562BACA231F1A6F003108BB /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562BAC9231F1A6F003108BB /* WeatherDetailView.swift */; };
+		05687169233315820069F45A /* SunLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05687168233315820069F45A /* SunLightUITests.swift */; };
 		05DD4C3B2319C02600B78378 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD4C3A2319C02600B78378 /* WeatherTableViewController.swift */; };
 		05DD4C3E231B2B9300B78378 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD4C3D231B2B9300B78378 /* ForecastModel.swift */; };
+		05E4352E233821F200596F42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4352D233821F200596F42 /* Constants.swift */; };
+		05E43530233821FC00596F42 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4352F233821FC00596F42 /* Alert.swift */; };
+		05E435322338221400596F42 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E435312338221400596F42 /* Utilities.swift */; };
+		05E435342338222200596F42 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E435332338222200596F42 /* Reachability.swift */; };
 		05FBFA67231DF3F500D58709 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA66231DF3F500D58709 /* WeatherDetailViewController.swift */; };
 		19B511D362AE93B119A3AAC1 /* Pods_SunLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A845369DF6A7D6F1D27D8187 /* Pods_SunLight.framework */; };
 		EA081322225E5C402011FC53 /* Pods_SunLightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4526260F823CB55F054579 /* Pods_SunLightTests.framework */; };
@@ -26,6 +31,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		055A7C9123172AA600EDBDF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055A7C7423172AA400EDBDF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055A7C7B23172AA400EDBDF9;
+			remoteInfo = SunLight;
+		};
+		0568716B233315820069F45A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 055A7C7423172AA400EDBDF9 /* Project object */;
 			proxyType = 1;
@@ -49,8 +61,15 @@
 		055EF567231789FA00E90AF1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0562BAC7231F1A1A003108BB /* WeatherBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBaseView.swift; sourceTree = "<group>"; };
 		0562BAC9231F1A6F003108BB /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
+		05687166233315820069F45A /* SunLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05687168233315820069F45A /* SunLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunLightUITests.swift; sourceTree = "<group>"; };
+		0568716A233315820069F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05DD4C3A2319C02600B78378 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		05DD4C3D231B2B9300B78378 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
+		05E4352D233821F200596F42 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		05E4352F233821FC00596F42 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		05E435312338221400596F42 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		05E435332338222200596F42 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		05FBFA66231DF3F500D58709 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		4272F8F70467A5D97690E9CE /* Pods-SunLightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B6EEAB264A288DC2CD84073 /* Pods-SunLightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunLightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunLightTests/Pods-SunLightTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05687163233315820069F45A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +119,7 @@
 			children = (
 				055A7C7E23172AA400EDBDF9 /* SunLight */,
 				055A7C9323172AA600EDBDF9 /* SunLightTests */,
+				05687167233315820069F45A /* SunLightUITests */,
 				055A7C7D23172AA400EDBDF9 /* Products */,
 				ECBF3673D1269780358658EF /* Pods */,
 				89C32AE80FC01FE45F408DE9 /* Frameworks */,
@@ -104,6 +131,7 @@
 			children = (
 				055A7C7C23172AA400EDBDF9 /* SunLight.app */,
 				055A7C9023172AA600EDBDF9 /* SunLightTests.xctest */,
+				05687166233315820069F45A /* SunLightUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +139,7 @@
 		055A7C7E23172AA400EDBDF9 /* SunLight */ = {
 			isa = PBXGroup;
 			children = (
+				05E4352C233821D800596F42 /* Utilities */,
 				0562BAC6231F19F8003108BB /* Views */,
 				0511FD51231C6BEB006DE768 /* Cell */,
 				05DD4C3C231B2B8200B78378 /* Model */,
@@ -168,6 +197,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		05687167233315820069F45A /* SunLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05687168233315820069F45A /* SunLightUITests.swift */,
+				0568716A233315820069F45A /* Info.plist */,
+			);
+			path = SunLightUITests;
+			sourceTree = "<group>";
+		};
 		057C36162318721C00B47CCE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +221,17 @@
 				05DD4C3D231B2B9300B78378 /* ForecastModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		05E4352C233821D800596F42 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				05E4352D233821F200596F42 /* Constants.swift */,
+				05E4352F233821FC00596F42 /* Alert.swift */,
+				05E435312338221400596F42 /* Utilities.swift */,
+				05E435332338222200596F42 /* Reachability.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		89C32AE80FC01FE45F408DE9 /* Frameworks */ = {
@@ -246,6 +295,24 @@
 			productReference = 055A7C9023172AA600EDBDF9 /* SunLightTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		05687165233315820069F45A /* SunLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0568716F233315820069F45A /* Build configuration list for PBXNativeTarget "SunLightUITests" */;
+			buildPhases = (
+				05687162233315820069F45A /* Sources */,
+				05687163233315820069F45A /* Frameworks */,
+				05687164233315820069F45A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0568716C233315820069F45A /* PBXTargetDependency */,
+			);
+			name = SunLightUITests;
+			productName = SunLightUITests;
+			productReference = 05687166233315820069F45A /* SunLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,6 +327,10 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					055A7C8F23172AA600EDBDF9 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 055A7C7B23172AA400EDBDF9;
+					};
+					05687165233315820069F45A = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 055A7C7B23172AA400EDBDF9;
 					};
@@ -280,6 +351,7 @@
 			targets = (
 				055A7C7B23172AA400EDBDF9 /* SunLight */,
 				055A7C8F23172AA600EDBDF9 /* SunLightTests */,
+				05687165233315820069F45A /* SunLightUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +368,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		055A7C8E23172AA600EDBDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05687164233315820069F45A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,10 +456,14 @@
 				0511FD53231C6C12006DE768 /* DailyWeatherTableViewCell.swift in Sources */,
 				05FBFA67231DF3F500D58709 /* WeatherDetailViewController.swift in Sources */,
 				055EF568231789FA00E90AF1 /* NetworkService.swift in Sources */,
+				05E4352E233821F200596F42 /* Constants.swift in Sources */,
+				05E435322338221400596F42 /* Utilities.swift in Sources */,
 				05DD4C3E231B2B9300B78378 /* ForecastModel.swift in Sources */,
 				0562BACA231F1A6F003108BB /* WeatherDetailView.swift in Sources */,
+				05E43530233821FC00596F42 /* Alert.swift in Sources */,
 				0562BAC8231F1A1A003108BB /* WeatherBaseView.swift in Sources */,
 				055A7C8023172AA400EDBDF9 /* AppDelegate.swift in Sources */,
+				05E435342338222200596F42 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +475,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05687162233315820069F45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05687169233315820069F45A /* SunLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -399,6 +490,11 @@
 			isa = PBXTargetDependency;
 			target = 055A7C7B23172AA400EDBDF9 /* SunLight */;
 			targetProxy = 055A7C9123172AA600EDBDF9 /* PBXContainerItemProxy */;
+		};
+		0568716C233315820069F45A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055A7C7B23172AA400EDBDF9 /* SunLight */;
+			targetProxy = 0568716B233315820069F45A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,6 +716,44 @@
 			};
 			name = Release;
 		};
+		0568716D233315820069F45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4R7HZ9MZBM;
+				INFOPLIST_FILE = SunLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratikbhaliya.SunLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SunLight;
+			};
+			name = Debug;
+		};
+		0568716E233315820069F45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4R7HZ9MZBM;
+				INFOPLIST_FILE = SunLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratikbhaliya.SunLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SunLight;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -646,6 +780,15 @@
 			buildConfigurations = (
 				055A7C9D23172AA600EDBDF9 /* Debug */,
 				055A7C9E23172AA600EDBDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0568716F233315820069F45A /* Build configuration list for PBXNativeTarget "SunLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0568716D233315820069F45A /* Debug */,
+				0568716E233315820069F45A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
